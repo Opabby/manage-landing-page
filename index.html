@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cabecalho.css">
   <title>Frontend Mentor | Manage landing page</title>
 </head>
-<body>
+<body class="corpo">
   <header class="cabecalho">
     <section class="header">
-      <div class="header__logo--container">
-        <img class="header__logo--img" src="./images/logo.svg">
-      </div>
-      <img src="./images/icon-hamburger.svg">
+      <img class="header__logo--img" src="./images/logo.svg">
+      <img class="header__hamburger--img" src="./images/icon-hamburger.svg">
       <div class="header__menu--container">
         <ul class="menu__list">
           <li class="menu__list--item"><a class="menu__item--link">Pricing</a></li>
@@ -30,8 +31,10 @@
       </div>
     </section>
     <section class="cabecalho__intro">
-      <div clss="intro__img--container">
-        <img src="./images/illustration-intro.svg">
+      <div class="intro__img--container">
+        <img class="intro__img1" src="./images/Capturar.svg">
+        <img class="intro__img2" src="./images/Capturar1.svg">
+        <img class="intro__img3" src="./images/Capturar2.svg">
       </div>
       <div class="intro__text--container">
         <h1 class="intro__title">Bring everyone together to build better products.</h1>

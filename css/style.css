@@ -1,0 +1,32 @@
+:root {
+
+    --bright-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+
+    --dark-grayish-blue: hsl(227, 12%, 61%);
+    --very-dark-blue: hsl(233, 12%, 13%);
+    --very-pale-red: hsl(13, 100%, 96%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    --be-vietnam: 'Be Vietnam Pro', sans-serif;
+
+}
+
+@font-face{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.btn{
+    color: var(--very-light-gray);
+    font-weight: 700;
+    background-color: var(--bright-red);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
