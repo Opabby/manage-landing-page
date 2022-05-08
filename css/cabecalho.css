@@ -4,7 +4,7 @@
         background-image: url('../images/bg-tablet-pattern.svg'), url('../images/bg-tablet-pattern.svg');
         background-size: 130%, 90%;
         background-repeat: no-repeat, no-repeat;
-        background-position: -50% -30%, 600% 90%;
+        background-position: -50% -30%, 600% 100%;
         padding-bottom: 6rem;
     }
     .header{
