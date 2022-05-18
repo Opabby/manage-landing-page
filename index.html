@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/cabecalho.css">
   <link rel="stylesheet" href="./css/conteudo.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <title>Frontend Mentor | Manage landing page</title>
 </head>
 <body class="corpo">
@@ -77,50 +78,50 @@
       <div class="testimonies__title--container">
         <h2 class="testimonies__title">What they've said</h2>
       </div>
-
-      <div class="testimonies__statements">
-
-        <div class="statement__card">
-          <img class="statement__card--icon" src="./images/avatar-anisha.png">
-          <div class="text__container">
-            <h4 class="statement__card--name">Anisha Li</h4>
-            <p class="statement__card--text">“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
-          </div>
-        </div>
-
-        <div class="statement__card">
-          <img class="statement__card--icon" src="./images/avatar-ali.png">
-          <div class="text__container">
-            <h4 class="statement__card--name">Ali Bravo</h4>
-            <p class="statement__card--text">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
-          </div>
-        </div>
-
-        <div class="statement__card">
-          <img class="statement__card--icon" src="./images/avatar-richard.png">
-          <div class="text__container">
-            <h4 class="statement__card--name">Richard Watts</h4>
-            <p class="statement__card--text">“Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!”</p>
-          </div>
-        </div>
-
-        <div class="statement__card">
-          <img class="statement__card--icon" src="./images/avatar-shanai.png">
-          <div class="text__container">
-            <h4 class="statement__card--name">Shanai Gough</h4>
-            <p class="statement__card--text">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-          </div>
-        </div>
-
+      <div class="carouel">
         
+          <div class="testimonies__statements">
+            <div class="statement__card" id="slide-1">
+              <img class="statement__card--icon" src="./images/avatar-anisha.png">
+              <div class="text__container">
+                <h4 class="statement__card--name">Anisha Li</h4>
+                <p class="statement__card--text">“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+              </div>
+            </div>
 
+            <div class="statement__card" id="slide-2">
+              <img class="statement__card--icon" src="./images/avatar-ali.png">
+              <div class="text__container">
+                <h4 class="statement__card--name">Ali Bravo</h4>
+                <p class="statement__card--text">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+              </div>
+            </div>
+
+            <div class="statement__card" id="slide-3">
+              <img class="statement__card--icon" src="./images/avatar-richard.png">
+              <div class="text__container">
+                <h4 class="statement__card--name">Richard Watts</h4>
+                <p class="statement__card--text">“Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!”</p>
+              </div>
+            </div>
+
+            <div class="statement__card" id="slide-4">
+              <img class="statement__card--icon" src="./images/avatar-shanai.png">
+              <div class="text__container">
+                <h4 class="statement__card--name">Shanai Gough</h4>
+                <p class="statement__card--text">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+              </div>
+            </div>
+
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+            <a href="#slide-4">4</a>
+
+          </div>
       </div>
-      <div clas="dots__container">
-        <span class="dot dot-1" onclick="currentSlide(1)"></span>
-        <span class="dot dot-1" onclick="currentSlide(2)"></span>
-        <span class="dot dot-1" onclick="currentSlide(3)"></span>
-        <span class="dot dot-1" onclick="currentSlide(4)"></span>
-      </div>
+
+      
       <button class="intro__button btn">Get Started</button>
     </section>
     <section class="conteudo__conclusion">
@@ -131,7 +132,8 @@
   <footer class="rodape">
     <div class="email">
       <input class="email__input" type="email" placeholder="Updtes in your inbox...">
-      <button class="go__btn btn"></button>      
+      <button class="btn go__btn">GO</button>
+      <p class="copyright__desktop">Copyright 2022. All Rights Reserved</p>      
     </div>
     <div class="footer__lists">
       <ul class="footer__list">
@@ -155,7 +157,7 @@
         <li><a class="social__link"><img src="./images/icon-instagram.svg"></a></li>
       </ul>
     </div>
-    <p class="copyright">Copyright 2022. All Rights Reserved</p>
+    <p class="copyright__mobile">Copyright 2022. All Rights Reserved</p>
   </footer>  
   
 </body>
