@@ -109,3 +109,21 @@
         background-color: var(--very-pale-red);
     }
 }
+
+@media screen and (min-width: 1024px){
+    .conteudo__texts{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 6rem;
+    }
+    .different{
+        text-align: left;
+        padding: 0 0;
+    }
+    .different__title{
+        padding-right: 5rem;
+    }
+    .different__text{
+        padding-right: 5rem;
+    }
+}

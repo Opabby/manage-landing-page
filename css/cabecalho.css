@@ -2,9 +2,9 @@
     .cabecalho{
         padding: 3rem 1.5rem;
         background-image: url('../images/bg-tablet-pattern.svg'), url('../images/bg-tablet-pattern.svg');
-        background-size: 130%, 90%;
         background-repeat: no-repeat, no-repeat;
         background-position: -50% -30%, 600% 100%;
+        background-size: 130%, 90%;
         padding-bottom: 6rem;
     }
     .header{
@@ -43,6 +43,9 @@
         width: 9.15rem;
         border-radius: 1px;
     }
+    .intro__desktop{
+        display: none;
+    }
     .intro__img2{
         transform: rotate(180deg);
     }
@@ -65,4 +68,80 @@
     }
 }
 
+@media screen and (min-width: 1024px){
+    .cabecalho{
+        padding: 4rem 6rem;
+        background-image: url('../images/bg-tablet-pattern.svg');
+        background-position: 100% 50%;
+        background-size: 50%;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header a:hover{
+        cursor: pointer;
+    }
+    .header__hamburger--img{
+        display: none;
+    }
+    .header__menu--container{
+        display: flex;
+    }
+    .menu__list{
+        display: flex;
+        list-style: none;
+    }
+    .menu__list--item{
+        margin-right: 1rem;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--dark-blue);
+    }
+    .menu__list--item:hover{
+        color: var(--dark-grayish-blue);
+        cursor: pointer;
+
+    }
+    .header__button--container{
+        display: inline-flex;
+    }
+    .header__button:hover{
+        color: var(--bright-red);
+        background-color: inherit;
+        border: 1px solid var(--bright-red);
+        cursor: pointer;
+    }
+    .cabecalho__intro{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .intro__img--container{
+        width: auto;
+    }
+    .intro__img1, .intro__img2, .intro__img3{
+        display: none;
+    }
+    .intro__desktop{
+        display: inline-flex;
+        width: 100%;
+    }
+    .intro__text--container{
+        width: 50vw;;
+        text-align: left;
+        padding-right: 6rem;
+    }
+    .intro__title{
+        /* padding-right: 4rem */
+        font-size: 30px;
+    }
+    .intro__text{
+        /* padding-right: 4rem; */
+    }
+    .intro__button:hover{
+        color: var(--bright-red);
+        background-color: inherit;
+        border: 1px solid var(--bright-red);
+        cursor: pointer;
+    }
+}
 
