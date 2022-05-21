@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px){
+@media screen and (min-width: 320px){
     .different{
         text-align: center;
         padding: 0 1.5rem;
@@ -47,55 +47,91 @@
         font-size: 14px;
         line-height: 1.75rem;
     }
-    .carousel{
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-    }
-    .testimonies__statements{
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-        scroll-snap-type: mandatory;
-        scroll-snap-align: 100%;
-
-    }
-    .testimonies__title{
-        text-align: center;
-        font-size: 30px;
-        font-weight: 700;
-        color: var(--dark-blue);
-    }
-    .statement__card{
+    .testimonials {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 4.325rem 0 3.125rem;
+    }
+    .slider {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 15.938rem;
+        margin: 6.25rem auto 2.5rem;
+    }
+    .card {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: auto;
+        width: 90%;
+        max-width: 31.25rem;
+        height: 15.313rem;
+        border-radius: 5px;
         text-align: center;
-        margin: 1rem 1rem;
-    }
-    .statement__card--icon{
-        width: 5rem;
-        margin-bottom: -2.5rem;
-        z-index: 1;
-    }
-    .text__container{
-        padding-top: 2.5rem;
         background-color: var(--very-light-gray);
-        z-index: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        flex-direction: column;
+        padding-top: 3.75rem;
+        animation: cardfade;
+        animation-duration: 1s;
     }
-    .statement__card--name{
-        color: var(--dark-blue);
+    .card.active-card{
+        display: flex;
     }
-    .statement__card--text{
-        color: var(--dark-grayish-blue);
-        line-height: 1.75rem;
-        font-size: 14px;
-        font-weight: 500;
+    
+    @keyframes cardfade{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
+
+    .card img{
+        position: absolute;
+        height: 4.375rem;
+        width: 4.375rem;
+        top: -2.188rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card p{
+        font-size: 0.9rem;
+        padding: .9rem 1.5rem;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: .625rem;
+        width: .625rem;
+        margin: 0 0.125rem 2.813rem;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid var(--bright-red);
+        display: inline-block;
+        opacity: 0.6;
+        margin-top: 3rem;
+    }
+
+    .active, .dot:hover {
+        background-color: var(--bright-red);
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
     .conteudo__conclusion{
         text-align: center;
         color: var(--very-pale-red);
@@ -104,6 +140,9 @@
         background: url('../images/bg-simplify-section-mobile.svg') var(--bright-red);
         background-repeat: no-repeat;
     }
+    .conclusion__title br{
+        display: none;
+    }
     .conclusion__button{
         color: var(--bright-red);
         background-color: var(--very-pale-red);
@@ -111,10 +150,16 @@
 }
 
 @media screen and (min-width: 1024px){
+    .conteudo{
+        background-image: url(../images/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: -30% 50%;
+        background-size: 50%;
+    }
     .conteudo__texts{
         display: flex;
         flex-direction: row;
-        padding: 2rem 6rem;
+        padding: 0 6rem;
     }
     .different{
         text-align: left;
@@ -126,4 +171,31 @@
     .different__text{
         padding-right: 5rem;
     }
+    .pros__list{
+        padding-top: 2rem;
+    }
+    .title__container{
+        background-color: inherit;
+    }
+    .pros__text{
+        padding-left: 4rem;
+    }
+    .conteudo__conclusion{
+        padding: 0 0;
+        height: 20rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;;
+    }
+    .conclusion__title br{
+        display: inline;
+    }
+    .conclusion__button:hover{
+        background-color: inherit;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+    }
+    
 }
