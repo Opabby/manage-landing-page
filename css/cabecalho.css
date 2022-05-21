@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px){
+@media screen and (min-width: 320px){
     .cabecalho{
         padding: 3rem 1.5rem;
         background-image: url('../images/bg-tablet-pattern.svg'), url('../images/bg-tablet-pattern.svg');
@@ -71,8 +71,9 @@
 @media screen and (min-width: 1024px){
     .cabecalho{
         padding: 4rem 6rem;
+        padding-bottom: 6rem;
         background-image: url('../images/bg-tablet-pattern.svg');
-        background-position: 100% 50%;
+        background-position: 100% 150%;
         background-size: 50%;
     }
     .header{
@@ -131,11 +132,7 @@
         padding-right: 6rem;
     }
     .intro__title{
-        /* padding-right: 4rem */
         font-size: 30px;
-    }
-    .intro__text{
-        /* padding-right: 4rem; */
     }
     .intro__button:hover{
         color: var(--bright-red);
