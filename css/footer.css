@@ -1,4 +1,4 @@
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
     .rodape{
         background: var(--very-dark-blue);
     }
@@ -13,6 +13,10 @@
         border-radius: 50px;
         border: none;
         margin-right: .5rem;
+    }
+    .email-form.error input {
+        border: var(--bright-red) 2px solid;
+        color: var(--bright-red);
     }
     .go__btn{
         color: white;
@@ -60,5 +64,35 @@
     }
     .copyright__mobile{
         display: none;
+    }
+    .rodape{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end
+    }
+    #email-form{
+        margin-bottom: 5rem;
+    }
+    .copyright__desktop {
+        color: var(--dark-grayish-blue);
+    }
+    .footer__lists{
+        display: flex;
+        align-items: center;
+    }
+    .footer__list{
+        margin-right: 8rem;
+    }
+    .list{
+        margin-right: 0;
+    }
+    .social__link{
+        margin-right: 1rem;
     }
 }
